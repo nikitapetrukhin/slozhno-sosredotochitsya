@@ -2,4 +2,111 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  /* padding: 10px; */
+  /* color: var(--main-text-color); */
+  /* background-color: var(--main-bg-color); */
+  font-family: 'IBM Plex mono';
+}
+
+.header {
+  display: grid;
+  grid-template-rows: 1fr min-content 1fr;
+  min-height: 100vh;
+  padding: 10px;
+  color: var(--accent-color);
+  background-image: url(/images/cover-image-dark.png);
+  object-fit: cover;
+  object-position: center;
+}
+
+.decorated-zone {
+  position: relative;
+}
+
+.header__rec {
+  position: absolute;
+  inset: 10px 38px auto auto;
+  color: currentColor;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.header__theme-menu {
+  /* margin-block-start: 65px;
+  margin-block-end: 68px; */
+  margin-inline-end: 7px;
+  justify-self: end;
+  align-self: center;
+}
+
+.header__theme-menu-button {
+  color: currentColor;
+  text-transform: lowercase;
+  letter-spacing: 1px;
+  background-color: transparent;
+  border: none;
+}
+
+.header__theme-menu-button_active {
+  outline: 1px solid currentColor;
+  outline-offset: 2px;
+  pointer-events: none;
+}
+
+.header__title {
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  font-weight: bold;
+  line-height: 0.83;
+  color: var(--header-title-color);
+  text-shadow: 4px 4px 0 var(--accent-color);
+  /* margin-block-end: 55px; */
+  /* caret-color: var(--focus-color); */
+}
+
+.header__description {
+  font-size: 18px;
+  /* margin-block-end: 55px; */
+  align-self: center;
+}
+
+.title-decor {
+  color: var(--header-text-color);
+  background-color: var(--accent-color);
+}
+
+.header__theme-menu-item:not(:last-of-type) {
+  margin-block-end: 13px;
+}
+
+.header__rec::before {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  inset: 9px auto auto 43px;
+  background-color: currentColor;
+  box-shadow: 0px 0px 4px 2px rgba(255, 0, 112, 1)
+}
+
+.decorated-zone::before {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-top: 1px solid currentColor;
+  border-right: 1px solid currentColor;
+  inset: 10px 10px auto auto;
+  color: currentColor;
+}
+
+.decorated-zone::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-left: 1px solid currentColor;
+  border-bottom: 1px solid currentColor;
+  inset: auto auto 10px 10px;
+  color: currentColor;
 }

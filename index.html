@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Сложно сосредоточиться</title>
     <meta name="color-scheme" content="dark light" />
+    <link rel="stylesheet" href="/fonts/fonts.css">
     <link rel="icon" href="/images/favicon.ico" sizes="any">
     <link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/images/favicon.png">
@@ -17,32 +18,44 @@
   </head>
   <body class="page">
     <header class="header decorated-zone">
+      <span class="header__rec" aria-hidden="true">rec</span>
       <nav class="header__theme-menu">
         <ul class="header__theme-menu-list">
           <li class="header__theme-menu-item">
             <button
-              class="header__theme-menu-button header__theme-menu-button_type_light"
+              class="header__theme-menu-button
+              header__theme-menu-button_active  
+              header__theme-menu-button_type_light"
+              
             >
               День
             </button>
           </li>
           <li class="header__theme-menu-item">
             <button
-              class="header__theme-menu-button header__theme-menu-button_active header__theme-menu-button_type_auto"
-              disabled
+              class="header__theme-menu-button 
+              header__theme-menu-button_type_auto"
             >
               Авто
             </button>
           </li>
           <li class="header__theme-menu-item">
             <button
-              class="header__theme-menu-button header__theme-menu-button_type_dark"
+              class="header__theme-menu-button
+              header__theme-menu-button_active 
+              header__theme-menu-button_type_dark"
+              disabled
             >
               Неон
             </button>
           </li>
         </ul>
       </nav>
+      <h1 class="header__title">no focus</h1>
+      <h2 class="header__description title-decor">
+        <p>Что делать, когда не можешь делать ничего</p>
+        <p>Или почему нам так сложно сконцентрироваться, особенно когда очень надо</p>
+      </h2>
     </header>
     <script src="./scripts/script.js"></script>
   </body>
