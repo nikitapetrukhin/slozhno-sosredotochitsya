@@ -8,6 +8,8 @@
   --header-text-color: #000028;
   --accent-color: #FF0070;
   --header-title-color: #DB00FF;
+  --background-image: url(/images/cover-image-dark.png);
+  --main-bg-color: #000028;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -15,5 +17,7 @@
     --header-text-color: #000028;
     --accent-color: #FF0070;
     --header-title-color: #DB00FF;
+    --background-image: url(/images/cover-image-dark.png);
+    --main-bg-color: #000028;
   }
 }
