@@ -8,6 +8,7 @@
   --header-title-color: #FFC2E6;
   --background-image: url(/images/cover-image-light.png);
   --main-bg-color: #FFF1F7;
+  --links-shadow: rgba(53, 52, 48, 0.4);
 }
 
 @media (prefers-color-scheme: light) {
@@ -17,6 +18,7 @@
     --header-title-color: #FFC2E6;
     --background-image: url(/images/cover-image-light.png);
     --main-bg-color: #FFF1F7;
+    --links-shadow: rgba(53, 52, 48, 0.4);
   }
 }
 
@@ -37,4 +39,8 @@
 .theme_light .header__rec,
 .theme_light .header__rec::before {
     display: none;
+}
+
+.theme_light .footer {
+  color: var(--header-text-color);
 }

@@ -12,5 +12,7 @@
   --main-bg-color: #000028;
   --background-image: url(/images/cover-image-dark.png);
   --breakpoint-tablet: 500px;
-  --breakpoint-tablet-simulation: (100vw - var(--breakpoint-tablet));
+  --breakpoint-tablet-simulation: (100vw - var(--breakpoint-tablet, 500px));
+  --opacity: 0.4;
+  --links-shadow: rgba(255, 0, 112, var(--opacity, 0,4));
 }

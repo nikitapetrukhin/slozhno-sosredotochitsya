@@ -8,11 +8,15 @@
   --header-text-color: #000028;
   --accent-color: #FF0070;
   --header-title-color: #DB00FF;
-  --background-image: url(/images/cover-image-dark.png);
+  --main-text-color: #F1B2CE;
   --main-bg-color: #000028;
+  --background-image: url(/images/cover-image-dark.png);
+  --breakpoint-tablet: 500px;
+  --breakpoint-tablet-simulation: (100vw - var(--breakpoint-tablet));
+  --links-shadow: rgba(255, 0, 112, 0.4)
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --header-text-color: #000028;
     --accent-color: #FF0070;
@@ -20,4 +24,4 @@
     --background-image: url(/images/cover-image-dark.png);
     --main-bg-color: #000028;
   }
-}
+} */

@@ -12,6 +12,10 @@
   margin-block-end: 20px;
 }
 
+.links {
+  text-shadow: 2px 1px 0 var(--accent-color);
+}
+
 .content-section__subtitle {
   margin-block-end: 0px;
 }
@@ -33,6 +37,19 @@
 
 section.content-section:last-of-type {
   margin-block-end: 59px;
+}
+
+.links:hover {
+  border-bottom: 1px solid currentColor;
+}
+
+.links:focus {
+  outline: none;
+}
+
+.links:focus-visible {
+  outline: 1px solid currentColor;
+  outline-offset: 1px;
 }
 
 @media (width >= 500px) {
@@ -80,14 +97,27 @@ section.content-section:last-of-type {
     grid-row: span 2;
   }
 
-  .content-section__images-item-books {
-
-  }
-
   .content-section__images-item-street {
     grid-column: span 2;
   }
+}
 
+@media (width >= 900px) {
+  .reasons__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
 
+  .intro {
+    gap: 20px 11px;
+  }
 
+  .advices {
+    gap: 18px 9px;
+  }
+
+  .reasons__title {
+    inline-size: 315px;
+  }
 }
