@@ -1,46 +1,51 @@
-  /* Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему */
-
 .page.theme_light {
-  --header-text-color: #353430;
+  --heading-text-color: #353430;
+  --banner-text-color: #FFC2E6;
   --accent-color: #FF8DCB;
-  --header-title-color: #FFC2E6;
-  --background-image: url(/images/cover-image-light.png);
+  --header-title-text-color: #353430;
+  --main-text-color: #353430;
   --main-bg-color: #FFF1F7;
+  --background-image: url(../images/cover-image-light.png);
   --links-shadow: rgba(53, 52, 48, 0.4);
 }
 
 @media (prefers-color-scheme: light) {
   :root {
-    --header-text-color: #353430;
+    --heading-text-color: #353430;
+    --banner-text-color: #FFC2E6;
     --accent-color: #FF8DCB;
-    --header-title-color: #FFC2E6;
-    --background-image: url(/images/cover-image-light.png);
+    --header-title-text-color: #353430;
+    --main-text-color: #353430;
     --main-bg-color: #FFF1F7;
+    --background-image: url(../images/cover-image-light.png);
     --links-shadow: rgba(53, 52, 48, 0.4);
+  }
+
+  .header__rec,
+  .header__rec::before {
+    display: none;
   }
 }
 
-.theme_light .header {
-    color: var(--header-text-color);
-}
+/* .theme_light .header {
+  color: var(--header-text-color);
+} */
 
-.theme_light .header__title {
-    color: var(--header-title-color);
-    text-shadow: 4px 4px 0 var(--accent-color);
+/* .theme_light .header__title {
+  color: var(--banner-text-color);
+  text-shadow: 4px 4px 0 var(--accent-color);
 }
 
 .theme_light .title-decor {
-    color: var(--header-text-color);
-    background-color: var(--accent-color);
-}
+  color: var(--header-text-color);
+  background-color: var(--accent-color);
+} */
 
 .theme_light .header__rec,
 .theme_light .header__rec::before {
-    display: none;
+  display: none;
 }
 
-.theme_light .footer {
+/* .theme_light .footer {
   color: var(--header-text-color);
-}
+} */

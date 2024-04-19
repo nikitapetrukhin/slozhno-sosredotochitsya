@@ -41,3 +41,7 @@ a {
   line-height: inherit;
   text-decoration: none;
 }
+
+span {
+  display: block;
+}

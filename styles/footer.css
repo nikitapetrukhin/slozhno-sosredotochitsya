@@ -3,11 +3,11 @@
   justify-content: center;
   align-items: center;
   padding: 0 clamp(10px, var(--breakpoint-tablet-simulation) * 1000, 20px);
-  block-size: 100vh;
-  color: var(--accent-color);
+  /* block-size: max(100vh, 668px); */
+  min-block-size: max(100vh, 668px);
+  color: var(--heading-text-color);
 }
 
 .footer__title {
   text-shadow: 2px 2px 0 var(--accent-color);
-  inset-inline-end: 0;
 }
