@@ -5,7 +5,7 @@
   --header-title-text-color: #000028;
   --main-text-color: #F1B2CE;
   --main-bg-color: #000028;
-  --background-image: url(/images/cover-image-dark.png);
+  --background-image: url(../images/cover-image-dark.png);
   --links-shadow: rgba(255, 0, 112, var(--opacity, 0,4));
 }
 

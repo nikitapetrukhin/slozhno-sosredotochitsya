@@ -14,7 +14,7 @@
 .header {
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
-  min-block-size: max(100vh, 668px);
+  block-size: max(100vh, 668px);
   padding: clamp(10px, (var(--breakpoint-tablet-simulation) * 1000), 20px);
   margin-block-end: clamp(40px, (var(--breakpoint-tablet-simulation) * 1000), 60px);
   color: var(--heading-text-color);
@@ -164,9 +164,6 @@
 }
 
 @media (width >= 1024px) {
-  .header {
-    min-block-size: 768px;
-  }
 
   .header__theme-menu {
     justify-self: center;

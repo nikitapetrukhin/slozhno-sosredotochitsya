@@ -27,25 +27,7 @@
   }
 }
 
-/* .theme_light .header {
-  color: var(--header-text-color);
-} */
-
-/* .theme_light .header__title {
-  color: var(--banner-text-color);
-  text-shadow: 4px 4px 0 var(--accent-color);
-}
-
-.theme_light .title-decor {
-  color: var(--header-text-color);
-  background-color: var(--accent-color);
-} */
-
 .theme_light .header__rec,
 .theme_light .header__rec::before {
   display: none;
 }
-
-/* .theme_light .footer {
-  color: var(--header-text-color);
-} */
